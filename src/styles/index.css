@@ -1,0 +1,134 @@
+:root {
+  /* COLORS */
+  --primary: #264653;
+  --secondary: #2EBE92;
+  --success: #2A9D8F;
+  --info: #E9C46A;
+  --warning: #F4A261;
+  --danger: #E76F51;
+  --dark: #13232A;
+  --white: #FDF8ED;
+  --black: #0A1215;
+  /* SHADOW COLOR */
+  --shadow-color: #2A9D8F40;
+  --dark-shadow-color: #00111140;
+  --light-shadow-color: #DDFFFFBF;
+  /* SHADOW */
+  --form-shadow: 0 0 0 0.2rem var(--shadow-color);
+  --dark-shadow-sm: 1px 1px 0.25rem var(--dark-shadow-color);
+  --dark-shadow: 2px 5px 0.5rem var(--dark-shadow-color);
+  --dark-shadow-lg: 4px 8px 0.5rem 0.2rem var(--dark-shadow-color);
+  --light-shadow: 2px 5px 0.5rem var(--light-shadow-color);
+  --text-shadow: 1px 1px 0.8rem var(--dark-shadow-color);
+  /* TRANSITIONS */
+  --shadow-transition: box-shadow 0.25s ease;
+  /* OTHER */
+  --border-deal: 0.3rem solid;
+}
+
+
+a {
+  color: var(--success);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--danger);
+  text-decoration: none;
+}
+
+.cap {
+  text-transform: capitalize;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.danger-icon {
+  color: var(--danger);
+  height: 5rem;
+  width: 5rem;
+}
+
+.logout-icon {
+  color: var(--success);
+  height: 5rem;
+  width: 5rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--success);
+  box-shadow: var(--form-shadow);
+}
+
+.form-error {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.btn-shadow:hover,
+.btn-shadow:focus {
+  box-shadow: var(--dark-shadow);
+}
+
+.btn-shadow-light:hover,
+.btn-shadow-light:focus {
+  box-shadow: var(--light-shadow);
+}
+
+.card {
+  margin: 0 auto;
+  box-shadow: var(--dark-shadow-sm);
+  transition: var(--shadow-transition);
+}
+
+.card-img-container {
+  height: fit-content;
+  overflow: hidden;
+}
+
+.card-img-container img {
+  height: 8rem;
+  width: 100%;
+}
+
+a .card {
+  color: var(--dark);
+}
+
+a .card:hover {
+  box-shadow: var(--dark-shadow-lg);
+  transition: var(--shadow-transition);
+  color: inherit;
+}
+
+.card span {
+  font-weight: 600;
+}
+
+.card h4 {
+  text-shadow: var(--text-shadow);
+  height: 6.5rem;
+}
+
+.price {
+  font-size: 320%;
+}
+
+.detail-img {
+  max-width: 100%;
+}
+
+.deal-detail-success {
+  border-left: var(--border-deal) var(--success);
+}
+
+.deal-detail-danger {
+  border-left: var(--border-deal) var(--danger);
+}
+
+.deal-detail-warning {
+  border-left: var(--border-deal) var(--warning);
+}
