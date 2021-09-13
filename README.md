@@ -45,7 +45,7 @@ If check successfully, go to the next step.
 
 ## SYSTEM CONFIGURATION
 
-From now on, all commands must be launched from within the repo folder (game_deals_frontend)
+From now on, all commands must be launched from within the repo folder (game_deals_frontend).
 
 ### Installing dependencies
 
@@ -57,11 +57,15 @@ $ npm install
 
 ## TESTING THE APPLICATION
 
-To run the test, use the command
+To run the test, use the command:
 
 ```sh
 $ npm test
 ```
+
+> If the tests do not start automatically, press "a" to run them all.
+
+When the tests have been executed press "q" to exit.
 
 ## START THE APPLICATION
 
